@@ -15,7 +15,7 @@ class MemberRepositoryTest {
 
     @Test
     fun saveMember() {
-        val savedMember = memberRepository.save(Member("kil"))
+        val savedMember = memberRepository.save(Member("memberA"))
         val foundMember = memberRepository.findById(savedMember.id)
             .orElseThrow(::RuntimeException)
         assertThat(foundMember.username).isEqualTo(savedMember.username)
