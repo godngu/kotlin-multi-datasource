@@ -1,0 +1,21 @@
+spring:
+  datasource:
+#    writer:
+    driver-class-name: org.h2.Driver
+    jdbc-url: jdbc:h2:tcp://localhost/~/datajpa
+    username: sa
+    password:
+
+  jpa:
+    hibernate:
+      ddl-auto: create
+    properties:
+      hibernate:
+        show_sql: false
+        format_sql: true
+    # TODO: 아래 설정은 코드상에서 어떻게 넣어야 하는가?
+    open-in-view: false
+
+logging.level:
+  org.hibernate.SQL: DEBUG
+  org.hibernate.type: TRACE
