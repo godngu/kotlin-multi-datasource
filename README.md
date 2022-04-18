@@ -17,3 +17,5 @@
   - 해당 설정에서는 CUD 쿼리가 발생하지 않습니다.
 - Secondary 트랜잭션은 Custom Annotation을 사용합니다.
   - `@TransactionalSecondary`
+> Primary와 Secondary의 트랜잭션은 묶여있지 않습니다.
+> - 이를 묶기 위해서는 설정이 추가 되어야 합니다.
